@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AquaVert Algérie</title>
+    <meta name="description" content="Contactez AquaVert Algérie pour investir, devenir partenaire ou commander nos produits. Nous sommes à votre écoute.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>AquaVert Algérie</h1>
+                <p class="tagline">L'Or Vert de Demain</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="modele-technologie.html">Modèle & Tech</a></li>
+                <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="investir.html">Investir</a></li>
+                <li><a href="impact-vision.html">Impact & Vision</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+            <p class="subtitle">Nous Sommes à Votre Écoute</p>
+        </div>
+    </section>
+
+    <!-- Coordonnées -->
+    <section class="coordonnees">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@aquavert-algerie.com">contact@aquavert-algerie.com</a></p>
+                    <p class="small">Pour investisseurs : <a href="mailto:investisseurs@aquavert-algerie.com">investisseurs@aquavert-algerie.com</a></p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="icon">📱</div>
+                    <h3>Téléphone</h3>
+                    <p>+213 XX XX XX XX XX</p>
+                    <p class="small">WhatsApp disponible</p>
+                    <p class="small">Disponibilité : Lun-Ven 9h-18h</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="icon">📍</div>
+                    <h3>Adresse</h3>
+                    <p>Alger, Algérie</p>
+                    <p class="small">(Adresse précise communiquée sur demande)</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="icon">🌐</div>
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links-vertical">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaires de Contact -->
+    <section class="formulaires-contact">
+        <div class="container">
+            <h2 class="section-title">Choisissez Votre Profil</h2>
+            <p class="section-intro">
+                Sélectionnez le formulaire correspondant à votre demande pour une réponse rapide et personnalisée.
+            </p>
+
+            <!-- Tabs Navigation -->
+            <div class="tabs-navigation">
+                <button class="tab-btn active" data-tab="investisseur">🤝 Investisseur</button>
+                <button class="tab-btn" data-tab="distributeur">🏪 Distributeur/Partenaire</button>
+                <button class="tab-btn" data-tab="client">🛒 Client/Commande</button>
+                <button class="tab-btn" data-tab="recrutement">💼 Candidature/Emploi</button>
+                <button class="tab-btn" data-tab="general">✉️ Question Générale</button>
+            </div>
+
+            <!-- Formulaire Investisseur -->
+            <div class="tab-content active" id="tab-investisseur">
+                <h3>Formulaire Investisseurs</h3>
+                <p>Vous souhaitez investir dans AquaVert ou obtenir notre business plan ? Remplissez ce formulaire.</p>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="type" value="investisseur">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="inv-nom">Nom & Prénom *</label>
+                            <input type="text" id="inv-nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inv-email">Email *</label>
+                            <input type="email" id="inv-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="inv-telephone">Téléphone *</label>
+                            <input type="tel" id="inv-telephone" name="telephone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inv-pays">Pays de Résidence *</label>
+                            <select id="inv-pays" name="pays" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="algerie">Algérie</option>
+                                <option value="france">France</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">États-Unis</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inv-profil">Profil d'Investisseur *</label>
+                        <select id="inv-profil" name="profil" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="particulier">Particulier (Diaspora)</option>
+                            <option value="business-angel">Business Angel</option>
+                            <option value="family-office">Family Office</option>
+                            <option value="vc-fund">Fonds d'Investissement / VC</option>
+                            <option value="entreprise">Entreprise / Corporate</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inv-montant">Montant d'Investissement Envisagé *</label>
+                        <select id="inv-montant" name="montant" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="50-100k">50 000 - 100 000 USD</option>
+                            <option value="100-250k">100 000 - 250 000 USD</option>
+                            <option value="250-500k">250 000 - 500 000 USD</option>
+                            <option value="500k+">500 000 USD et plus</option>
+                            <option value="non-defini">Non défini</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inv-interet">Intérêt Principal *</label>
+                        <select id="inv-interet" name="interet" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="equity">Investissement en Capital (Equity)</option>
+                            <option value="pret">Prêt Participatif</option>
+                            <option value="les-deux">Les deux options m'intéressent</option>
+                            <option value="autre">Autre (à préciser)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Documents souhaités</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="docs[]" value="business-plan"> Business Plan Complet</label>
+                            <label><input type="checkbox" name="docs[]" value="pitch-deck"> Pitch Deck</label>
+                            <label><input type="checkbox" name="docs[]" value="financier"> Projections Financières</label>
+                            <label><input type="checkbox" name="docs[]" value="technique"> Dossier Technique</label>
+                            <label><input type="checkbox" name="docs[]" value="juridique"> Documentation Juridique (Loi 22-18)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inv-message">Message / Questions</label>
+                        <textarea id="inv-message" name="message" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="nda-accepte" required>
+                            J'accepte de signer un accord de confidentialité (NDA) avant de recevoir les documents sensibles *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-large btn-primary">Envoyer la Demande</button>
+                    <p class="form-note">Réponse sous 24-48h. Tous les champs marqués d'un * sont obligatoires.</p>
+                </form>
+            </div>
+
+            <!-- Formulaire Distributeur/Partenaire -->
+            <div class="tab-content" id="tab-distributeur">
+                <h3>Formulaire Distributeurs & Partenaires</h3>
+                <p>Vous souhaitez distribuer nos produits ou établir un partenariat commercial ?</p>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="type" value="distributeur">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dist-nom">Nom & Prénom *</label>
+                            <input type="text" id="dist-nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dist-entreprise">Entreprise *</label>
+                            <input type="text" id="dist-entreprise" name="entreprise" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dist-email">Email Professionnel *</label>
+                            <input type="email" id="dist-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dist-telephone">Téléphone *</label>
+                            <input type="tel" id="dist-telephone" name="telephone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dist-type">Type d'Activité *</label>
+                        <select id="dist-type" name="type-activite" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="supermarche">Supermarché / Grande Distribution</option>
+                            <option value="restaurant">Restaurant / Hôtel</option>
+                            <option value="grossiste">Grossiste / Cash & Carry</option>
+                            <option value="magasin-bio">Magasin Bio / Produits Locaux</option>
+                            <option value="exportateur">Exportateur</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dist-produits">Produits Intéressants *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="produits[]" value="poissons"> Poissons d'Élevage</label>
+                            <label><input type="checkbox" name="produits[]" value="fraises"> Fraises</label>
+                            <label><input type="checkbox" name="produits[]" value="tomates"> Tomates</label>
+                            <label><input type="checkbox" name="produits[]" value="salades"> Salades & Légumes-Feuilles</label>
+                            <label><input type="checkbox" name="produits[]" value="herbes"> Herbes Aromatiques</label>
+                            <label><input type="checkbox" name="produits[]" value="tous"> Tous les Produits</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dist-volumes">Volumes Mensuels Estimés</label>
+                        <input type="text" id="dist-volumes" name="volumes" placeholder="Ex: 500 kg de fraises, 200 kg de poissons">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dist-message">Message / Détails de Votre Projet *</label>
+                        <textarea id="dist-message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-large btn-primary">Envoyer la Demande</button>
+                </form>
+            </div>
+
+            <!-- Formulaire Client/Commande -->
+            <div class="tab-content" id="tab-client">
+                <h3>Formulaire Commande Produits</h3>
+                <p>Vous souhaitez commander nos produits pour consommation personnelle ?</p>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="type" value="client">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cli-nom">Nom & Prénom *</label>
+                            <input type="text" id="cli-nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cli-email">Email *</label>
+                            <input type="email" id="cli-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cli-telephone">Téléphone *</label>
+                            <input type="tel" id="cli-telephone" name="telephone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cli-ville">Ville *</label>
+                            <input type="text" id="cli-ville" name="ville" required placeholder="Ex: Alger, Oran, Constantine">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cli-produits">Produits Souhaités *</label>
+                        <textarea id="cli-produits" name="produits" rows="4" required placeholder="Ex: 2 kg de tilapia, 500g de fraises, 100g de basilic"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cli-livraison">Mode de Livraison Préféré</label>
+                        <select id="cli-livraison" name="livraison">
+                            <option value="livraison">Livraison à domicile</option>
+                            <option value="retrait">Retrait à la ferme</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cli-message">Informations Complémentaires</label>
+                        <textarea id="cli-message" name="message" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-large btn-primary">Envoyer la Commande</button>
+                    <p class="form-note">
+                        <strong>Note :</strong> Nos produits seront disponibles à partir de mi-2027 (après mise en production du site pilote).
+                        Nous vous recontacterons pour confirmer la disponibilité.
+                    </p>
+                </form>
+            </div>
+
+            <!-- Formulaire Recrutement -->
+            <div class="tab-content" id="tab-recrutement">
+                <h3>Formulaire Candidature / Emploi</h3>
+                <p>Vous souhaitez rejoindre l'équipe AquaVert ? Envoyez-nous votre candidature.</p>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="type" value="recrutement">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rec-nom">Nom & Prénom *</label>
+                            <input type="text" id="rec-nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rec-email">Email *</label>
+                            <input type="email" id="rec-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rec-telephone">Téléphone *</label>
+                            <input type="tel" id="rec-telephone" name="telephone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rec-ville">Ville de Résidence *</label>
+                            <input type="text" id="rec-ville" name="ville" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rec-poste">Poste Visé / Domaine de Compétence *</label>
+                        <select id="rec-poste" name="poste" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="agronome">Ingénieur Agronome / Technicien Aquaponique</option>
+                            <option value="iot">Ingénieur IoT / Développeur</option>
+                            <option value="data">Data Analyst / Data Scientist</option>
+                            <option value="commercial">Commercial / Responsable Distribution</option>
+                            <option value="production">Ouvrier de Production / Récolte</option>
+                            <option value="admin">Administratif / RH / Comptabilité</option>
+                            <option value="qualite">Responsable Qualité / Certifications</option>
+                            <option value="autre">Autre (à préciser)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rec-experience">Années d'Expérience</label>
+                        <input type="text" id="rec-experience" name="experience" placeholder="Ex: 3 ans">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rec-diplome">Diplôme / Formation</label>
+                        <input type="text" id="rec-diplome" name="diplome" placeholder="Ex: Ingénieur Agronome (ENSA)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rec-cv">CV (PDF, max 5 Mo)</label>
+                        <input type="file" id="rec-cv" name="cv" accept=".pdf" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rec-lettre">Lettre de Motivation / Présentation *</label>
+                        <textarea id="rec-lettre" name="lettre" rows="6" required placeholder="Parlez-nous de votre motivation à rejoindre AquaVert"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rec-disponibilite">Disponibilité</label>
+                        <select id="rec-disponibilite" name="disponibilite">
+                            <option value="immediate">Immédiate</option>
+                            <option value="1-mois">1 mois</option>
+                            <option value="2-3-mois">2-3 mois</option>
+                            <option value="negociable">Négociable</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-large btn-primary">Envoyer la Candidature</button>
+                </form>
+            </div>
+
+            <!-- Formulaire Général -->
+            <div class="tab-content" id="tab-general">
+                <h3>Formulaire de Contact Général</h3>
+                <p>Pour toute autre demande ou question.</p>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="type" value="general">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gen-nom">Nom & Prénom *</label>
+                            <input type="text" id="gen-nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gen-email">Email *</label>
+                            <input type="email" id="gen-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gen-telephone">Téléphone</label>
+                        <input type="tel" id="gen-telephone" name="telephone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gen-sujet">Sujet *</label>
+                        <input type="text" id="gen-sujet" name="sujet" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gen-message">Message *</label>
+                        <textarea id="gen-message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-large btn-primary">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contact -->
+    <section class="faq-contact">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Quand vos produits seront-ils disponibles ?</h4>
+                    <p>
+                        Nous prévoyons le début de la production commerciale pour <strong>mi-2027</strong>,
+                        après la construction et la mise en route du site pilote. Vous pouvez déjà pré-commander
+                        ou manifester votre intérêt via le formulaire.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Livrez-vous à l'international ?</h4>
+                    <p>
+                        Oui, nous prévoyons l'export de certains produits (fraises, herbes aromatiques) vers
+                        l'Europe dès la phase 2 (2028). Pour les poissons, réglementation sanitaire à étudier.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Puis-je visiter votre ferme ?</h4>
+                    <p>
+                        Une fois le site pilote opérationnel (2027), nous organiserons des visites guidées
+                        pour les investisseurs, partenaires, écoles et grand public. Réservation obligatoire.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Combien de temps pour recevoir une réponse ?</h4>
+                    <p>
+                        Nous répondons à toutes les demandes sous <strong>24-48h ouvrables</strong>.
+                        Pour les demandes d'investissement complexes, un premier échange téléphonique
+                        sera programmé rapidement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>AquaVert Algérie</h4>
+                    <p>L'innovation aquaponique au service de la souveraineté alimentaire</p>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="modele-technologie.html">Technologie</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="impact-vision.html">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Investisseurs</h4>
+                    <ul>
+                        <li><a href="investir.html">Opportunités d'Investissement</a></li>
+                        <li><a href="investir.html#cadre-juridique">Cadre Juridique</a></li>
+                        <li><a href="investir.html#diaspora">Pour la Diaspora</a></li>
+                        <li><a href="contact.html">Demander le Business Plan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: contact@aquavert-algerie.com</p>
+                    <p>Tél: +213 XX XX XX XX XX</p>
+                    <p>Alger, Algérie</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AquaVert Algérie. Tous droits réservés. | <a href="#">Mentions Légales</a> | <a href="#">Politique de Confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetTab = this.dataset.tab;
+
+                    // Remove active classes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    document.getElementById('tab-' + targetTab).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
